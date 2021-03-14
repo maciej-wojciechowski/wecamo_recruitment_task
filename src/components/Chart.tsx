@@ -18,8 +18,10 @@ type Props = {
 
 const Chart: React.FC<Props> = ({ data }) => {
   return (
-    <ResponsiveContainer width="95%" height={350}>
-      <LineChart data={data} margin={{ top: 5, bottom: 5, left: 5, right: 5 }}>
+    <ResponsiveContainer width="100%" height={350}>
+      <LineChart
+        data={data}
+        margin={{ top: 5, bottom: 5, left: 35, right: 35 }}>
         <Line type="monotone" dataKey="confirmed" stroke="#8884d8" />
         <Line type="monotone" dataKey="deaths" stroke="#8884d8" />
         <Line type="monotone" dataKey="recovered" stroke="#8884d8" />

@@ -38,9 +38,9 @@ const monthChange :ReturnProps = (fromDate,toDate,counter,oldCounter,setFromDate
       let newToMonthStr = monthFormat(newToMonth);
       if (newToMonth > 12) {
         let newToYear = parseInt(currentToDate[0]) + 1;
-        newToDate = [newToYear.toString(), "01", currentFromDate[2]];
+        newToDate = [newToYear.toString(), "01", currentToDate[2]];
       } else {
-        newToDate = [currentToDate[0], newToMonthStr, currentFromDate[2]];
+        newToDate = [currentToDate[0], newToMonthStr, currentToDate[2]];
       }
       newFromDate = [currentToDate[0], currentToDate[1], currentFromDate[2]];
     }
