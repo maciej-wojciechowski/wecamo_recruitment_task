@@ -32,7 +32,7 @@ function App() {
       setData(null);
     }
   };
-
+  /* eslint-disable */
   useEffect(() => {
     monthChange(fromDate, toDate, counter, oldCounter, setFromDate, setToDate);
   }, [counter]);
@@ -40,6 +40,7 @@ function App() {
   useEffect(() => {
     getData();
   }, [toDate, fromDate]);
+  /* eslint-disable */
 
   return (
     <div className="App">
